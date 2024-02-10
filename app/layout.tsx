@@ -50,18 +50,13 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const calSans = LocalFont({
-  src: "../public/fonts/CalSans-SemiBold.ttf",
-  variable: "--font-calsans",
-});
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+    <html lang="en" className={inter.variable}>
       <head>
         <Analytics />
       </head>
